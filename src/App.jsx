@@ -1,4 +1,9 @@
 import './App.css'
+import githubIcon from './assets/images/github_icon.svg'
+import linkedinIcon from './assets/images/linkedin_icon.svg'
+import twitterIcon from './assets/images/twitter_icon.svg'
+import angellistIcon from './assets/images/angellist_icon.svg'
+import hashnodeIcon from './assets/images/icons8-hashnode.svg'
 
 function App() {
   return (
@@ -8,11 +13,11 @@ function App() {
         <p>Mohamed Sabry</p>
         
         <div className="social_box">
-          <a href="http://github.com/mohamedSabry0"><img src="./assets/images/github_icon.svg" alt="github icon" /></a>
-          <a href="https://angel.co/u/mohamed-sabry-8"><img src="./assets/images/angellist_icon.svg" alt="angellist icon" /></a>
-          <a href="http://www.linkedin.com/in/mohamed-sabry0"><img src="./assets/images/linkedin_icon.svg" alt="linkedin icon" /></a>
-          <a href="https://mshasan.hashnode.dev/"><img src="./assets/images/icons8-hashnode.svg" alt="hashnode icon" /></a>
-          <a href="https://twitter.com/mohsmh0"><img src="./assets/images/twitter_icon.svg" alt="twitter icon" /></a>
+          <a href="http://github.com/mohamedSabry0"><img src={githubIcon} alt="github icon" /></a>
+          <a href="https://angel.co/u/mohamed-sabry-8"><img src={angellistIcon} alt="angellist icon" /></a>
+          <a href="http://www.linkedin.com/in/mohamed-sabry0"><img src={linkedinIcon} alt="linkedin icon" /></a>
+          <a href="https://mshasan.hashnode.dev/"><img src={hashnodeIcon} alt="hashnode icon" /></a>
+          <a href="https://twitter.com/mohsmh0"><img src={twitterIcon} alt="twitter icon" /></a>
         </div>
       </nav>
     </header>
@@ -40,7 +45,7 @@ function App() {
           <p>Reading time-management app, allows a user to add, edit, and remove groups,
              time spans(and add them to groups), sharing them with other, with view-only access.
               Built with Ruby, and Rails. 
-            <a className='icon-link' href="https://github.com/mohamedSabry0/reading-hour"><img src="./assets/images/github_icon.svg" alt="github icon" /></a>
+            <a className='icon-link' href="https://github.com/mohamedSabry0/reading-hour"><img src={githubIcon} alt="github icon" /></a>
           </p>
         </div>
         <div>
@@ -56,7 +61,7 @@ function App() {
           <p>
             Math-geeks  — feeling like fiddling with a calculator? An interesting quote? Or the old lorem Home page? All in place!
             <a className='icon-link' href="https://github.com/mohamedSabry0/math-geeks">
-              <img src="./assets/images/github_icon.svg" alt="github icon" />
+              <img src={githubIcon} alt="github icon" />
             </a>,
             <a href="https://mathgeeks-4y9n.onrender.com">Demo</a>,
             Built with: (ReactJS, React Router)
