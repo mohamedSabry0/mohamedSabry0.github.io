@@ -20,7 +20,7 @@ function App() {
       <h3>Hey there,</h3>
       <p className="about-text">
         I'm Mohamed Sabri,        
-        and I've been a full stack developer for about 2 years.
+        and I've been a full stack developer for about 3 years.
 
         I would love to work in an environment where I can deepen and build upon
         my expertise in software development, 
