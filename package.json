@@ -1,0 +1,21 @@
+{
+  "name": "mohamedsabry0.github.io",
+  "version": "1.0.0",
+  "description": "> This is the first iteration of this little space.",
+  "main": "index.js",
+  "scripts": {
+    "install": "pnpm install",
+    "start": "pnpm start",
+    "build": "pnpm build",
+    "test": "pnpm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "vite": "^6.0.5"
+  }
+}
