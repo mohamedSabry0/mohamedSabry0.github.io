@@ -7,9 +7,31 @@
     <title>Mohamed's Portfolio</title>
   </head>
   <body class="bg-gray-100 text-gray-900">
-    <header class="bg-white shadow-md">
-      <nav class="container mx-auto p-4">
-        <ul class="flex flex-col md:flex-row md:space-x-4">
+    <header class="bg-white shadow-md mb-8">
+      <nav class="container mx-auto p-4 flex justify-between items-center relative">
+        <div class="text-xl font-bold">Mohamed's Portfolio</div>
+        <div class="md:hidden">
+          <button id="menu-button" class="text-gray-700 focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          id="menu"
+          class="absolute top-full left-0 w-full bg-white shadow-md md:shadow-none md:static md:flex md:flex-row md:space-x-4 transition-all duration-300 ease-in-out transform scale-0 opacity-0 md:transform-none md:opacity-100 md:scale-100 origin-top"
+        >
           <li><a href="#home" class="block py-2 px-4 text-gray-700 hover:bg-gray-200">Home</a></li>
           <li>
             <a href="#about" class="block py-2 px-4 text-gray-700 hover:bg-gray-200">About</a>
@@ -24,35 +46,35 @@
       </nav>
     </header>
     <main class="container mx-auto p-4">
-      <section id="home" class="mb-4">
+      <section id="home" class="mb-8">
         <h1 class="text-4xl font-bold">Mohamed's Portfolio</h1>
         <p class="text-lg">Welcome to my portfolio</p>
       </section>
-      <section id="about" class="mb-4">
+      <section id="about" class="mb-8">
         <h2 class="text-2xl font-bold">About Me</h2>
         <p>
           I am a web developer with experience in HTML, CSS, JavaScript, and React. I am passionate
           about building responsive and accessible web applications.
         </p>
       </section>
-      <section id="projects" class="mb-4">
+      <section id="projects" class="mb-8">
         <h2 class="text-2xl font-bold">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="bg-white shadow-md p-4">
+          <div class="bg-white shadow-md p-4 mb-4">
             <h3 class="text-xl font-bold">Project 1</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, voluptates,
               quod, quos quas quae quia quibusdam consequuntur doloremque voluptatum doloribus.
             </p>
           </div>
-          <div class="bg-white shadow-md p-4">
+          <div class="bg-white shadow-md p-4 mb-4">
             <h3 class="text-xl font-bold">Project 2</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, voluptates,
               quod, quos quas quae quia quibusdam consequuntur doloremque voluptatum doloribus.
             </p>
           </div>
-          <div class="bg-white shadow-md p-4">
+          <div class="bg-white shadow-md p-4 mb-4 md:mb-0">
             <h3 class="text-xl font-bold">Project 3</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, voluptates,
@@ -97,7 +119,7 @@
         </form>
       </section>
     </main>
-    <footer class="bg-white shadow-md">
+    <footer class="bg-white shadow-md mt-8">
       <div class="container mx-auto p-4 text-center">
         <p>&copy; 2024 Mohamed's Portfolio</p>
       </div>
