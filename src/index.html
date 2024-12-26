@@ -4,9 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Mohamed's Portfolio</title>
   </head>
-  <body>
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-md">
+      <nav class="container mx-auto p-4">
+        <ul class="flex flex-col md:flex-row md:space-x-4">
+          <li><a href="#home" class="block py-2 px-4 text-gray-700 hover:bg-gray-200">Home</a></li>
+          <li>
+            <a href="#about" class="block py-2 px-4 text-gray-700 hover:bg-gray-200">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="block py-2 px-4 text-gray-700 hover:bg-gray-200">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="block py-2 px-4 text-gray-700 hover:bg-gray-200">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container mx-auto p-4">
+      <section id="home" class="mb-4">
+        <h1 class="text-4xl font-bold">Mohamed's Portfolio</h1>
+        <p class="text-lg">Welcome to my portfolio</p>
+      </section>
+      <section id="about" class="mb-4">
+        <h2 class="text-2xl font-bold">About Me</h2>
+        <p>
+          I am a web developer with experience in HTML, CSS, JavaScript, and React. I am passionate
+          about building responsive and accessible web applications.
+        </p>
+      </section>
+      <section id="projects" class="mb-4">
+        <h2 class="text-2xl font-bold">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white shadow-md p-4">
+            <h3 class="text-xl font-bold">Project 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, voluptates,
+              quod, quos quas quae quia quibusdam consequuntur doloremque voluptatum doloribus.
+            </p>
+          </div>
+          <div class="bg-white shadow-md p-4">
+            <h3 class="text-xl font-bold">Project 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, voluptates,
+              quod, quos quas quae quia quibusdam consequuntur doloremque voluptatum doloribus.
+            </p>
+          </div>
+          <div class="bg-white shadow-md p-4">
+            <h3 class="text-xl font-bold">Project 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, voluptates,
+              quod, quos quas quae quia quibusdam consequuntur doloremque voluptatum doloribus.
+            </p>
+          </div>
+          <div class="bg-white shadow-md p-4">
+            <h3 class="text-xl font-bold">Project 4</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem, voluptates,
+              quod, quos quas quae quia quibusdam consequuntur doloremque voluptatum doloribus.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="mb-4">
+        <h2 class="text-2xl font-bold">Contact</h2>
+        <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="name" class="block">Name</label>
+            <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300" />
+          </div>
+          <div>
+            <label for="email" class="block">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300" />
+          </div>
+          <div class="col-span-2">
+            <label for="message" class="block">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              class="w-full p-2 border border-gray-300"
+            ></textarea>
+          </div>
+          <div class="col-span-2">
+            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white p-2">
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="bg-white shadow-md">
+      <div class="container mx-auto p-4 text-center">
+        <p>&copy; 2024 Mohamed's Portfolio</p>
+      </div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
